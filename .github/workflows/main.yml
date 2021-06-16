@@ -51,8 +51,6 @@ jobs:
     name: deploy_test
     runs-on: self-hosted
     needs: package
-    environment:
-      url: http://localhost:8081/game2048
     steps:
       - name: deploy
         run: cp -f ./target/*.war /usr/local/tomcat/webapps
