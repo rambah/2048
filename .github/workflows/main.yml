@@ -42,7 +42,7 @@ jobs:
     steps:
       - name: create war file
         run: mvn package
-      - uses: actions/upload-artifacts@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: game.war
           path: "target/*.war"
